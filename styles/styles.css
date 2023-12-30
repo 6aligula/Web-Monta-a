@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&family=Oswald:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #fff;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+.header-container{
+  width: 100%;
+  
+}
+
+.ircb {
+  margin: 0;
+  display: flex;
+  justify-content: end;
+  list-style-type: none;
+
+}
+
+.ircb li {
+  padding: 10px 0px 10px 30px;
+  font: 16px;
+  font-weight: bold;
+}
+
+.ircb li a {
+  text-decoration: none;
+  color: #000000;
+
+}
+
+/* Media queries para pantallas menores a 720px */
+@media (max-width: 720px) {
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #fff;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+  }
+  .navbar .hvr2,
+  .mm2 .rri {
+    display: none;
+  }
+
+  .cont,
+  .cont2,
+  #club-v,
+
+  .mm2 {
+    width: 100%;
+    /* Ajusta esto para que tome todo el ancho disponible */
+  }
+
+  .inhaes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas para pantallas más grandes */
+    grid-gap: 20px;  }
+
+  h1 {
+    font-size: 25px;
+    /* Reduce el tamaño del texto para grandes titulares */
+  }
+
+  .a-hj {
+    display: flex; /* Or 'block' if you want the text above the image */
+    flex-direction: column; /* Stack image and text */
+    align-items: center; /* Center content */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+    text-align: center; /* Center the text */
+    margin-right: 25px;
+  }
+
+  .a-hj img {
+    max-width: 50%; /* Adjust the width of the image as necessary */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto 10px; /* Add margin to the bottom of the image */
+  }
+
+  .i-h-e h2 {
+    font-size: 20px; /* Ajusta el tamaño del texto para el título de la sección si es necesario */
+  }
+}
+
+/*---------------------------------------------main----------------------------------------------------------------*/
+.cont2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0px;
+  max-width: 1280px;
+  margin: auto;
+  width: 95%;
+}
+
+.mm {
+  background-image: url('../img/img-portada.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center; /* Cambiado de 'space-between' a 'center' */
+  align-items: center; /* Alinea los elementos verticalmente */
+  width: 100%;
+  background-color: #8B4513;
+  padding: 20px; /* Ajusta el padding a tu preferencia */
+
+}
+
+/* Estilos para el texto dentro de mm */
+.mm p {
+  color: #fff;
+  text-align: center;
+  padding: 0px 20px; /* Ajusta el padding horizontal para que el texto no toque los bordes */
+  line-height: 24px;
+}
+
+.mm2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; /* Ajusta este padding para dar espacio alrededor del contenido */
+  width: auto; /* O cambia a un porcentaje específico para controlar el ancho */
+}
+
+/* Estilos para el logo */
+.mmm {
+  max-height: 400px; /* O ajusta según el tamaño deseado */
+  width: auto; /* Mantiene la proporción de la imagen */
+}
+
+.mm2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  width: 60%;
+}
+
+.lg-m {
+  display: flex;
+  justify-content: center;
+  height: 50%;
+}
+
+.button {
+  background-color: #13598b;
+  color: #fff;
+  height: 44px;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#club-v {
+  display: flex;
+  justify-content: center;
+  padding-top: 0px;
+  max-width: 1280px;
+  margin: auto;
+  width: 95%;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 64px;
+}
+
+.i-h-e {
+  /* margin: auto;
+  max-width: 1280px;
+  width: 100%; */
+  background-color: #f8f8f8; /* Agrega un color de fondo claro */
+  padding: 40px 20px; /* Ajusta el espaciado */
+  text-align: center; /* Alinea el texto al centro */
+  /* width: 100%; */
+}
+
+.i-h-e h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+}
+
+/* Estilos actuales de .inhaes y .a-hj */
+.inhaes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  justify-content: center;
+}
+
+.a-hj {
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Asegúrate de centrar el texto dentro de .a-hj */
+}
+
+.a-hj p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.a-hj img {
+  max-width: 100%; /* Asegura que la imagen no sobrepase el ancho de la tarjeta */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
